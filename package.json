@@ -1,0 +1,22 @@
+{
+  "name": "weather-query-platform",
+  "version": "1.0.0",
+  "description": "Weather info.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LincKim/Weather-Query-Platform.git"
+  },
+  "keywords": [
+    "weather"
+  ],
+  "author": "Lincoln Kimutai Too",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LincKim/Weather-Query-Platform/issues"
+  },
+  "homepage": "https://github.com/LincKim/Weather-Query-Platform#readme"
+}
