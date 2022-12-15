@@ -8,19 +8,36 @@ body {
     font-weight: 300;
 }
 #top {
-    background-color: rgb(155, 212, 212);
+    background-color: rgb(176, 202, 202);
     margin-top: -20px;
     margin-bottom: 0px;
     margin-left: -7px ;
     margin-right: -7px;
     font-size: large;
+    /* float: right; */
     display: flex;
     
+    
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
 }
 
 #page_title {
     text-align: center;
-    background-color: cadetblue;
+    background-color: rgb(114, 158, 160);
     margin-left: 500px;
     margin-right: 500px;
+    margin-top: 0px;
+    
+}
+.link_list {
+   list-style: none;
+   margin-left: 600px;
+}
+nav li {
+    display: inline-flex;
+    margin-left: 50px;
 }
