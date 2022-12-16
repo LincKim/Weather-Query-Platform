@@ -30,14 +30,15 @@ Clone the repo by using the following:
 ### PREREQUISITES
 The app will be live and the link is provided further down the short read.
 
-Otherwise if you need it at you local machine then follow the following steps: 
+Otherwise if you need it at you local machine then once you have cloned then you are good to go.
 
-
+In this case you won't need to run the 'db json server' because the data is being fetched from a remote location.
+ 
 
 #### Running the tests
 The Web App will be live and this means that you should be able to query on the weather conditions of the place you are interested in.
 
-The Code Challenge tests my understanding on:
+These Project seeks to tests my understanding on:
 
 <li>Manipulating the DOM</li>
 <li>Recognizing JS Events</li>
