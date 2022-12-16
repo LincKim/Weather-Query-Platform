@@ -125,3 +125,12 @@ nav > ul > li > a:before {
 nav > ul > li > a:hover::before {
     width: 100%;
 }
+nav > h3 > a {
+    color: rgb(82, 50, 141);
+    text-decoration: none;
+    margin-left: 15px;
+}
+nav > h3 > a:hover {
+    color: rgb(189, 87, 18);
+   
+}
