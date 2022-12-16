@@ -16,11 +16,15 @@ Open a terminal / command line interface on your computer and navigate to your d
 
 Clone the repo by using the following:
 
-  git clone 
+  git clone:
+  
+     https://github.com/LincKim/Weather-Query-Platform.git
   
   or using the SSh Key:
 
-  git clone 
+  git clone:
+  
+    git@github.com:LincKim/Weather-Query-Platform.git 
 
 
 ### PREREQUISITES
