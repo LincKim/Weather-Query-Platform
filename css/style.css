@@ -1,7 +1,7 @@
 body {
     background-image: url(/css/Misty.jpg);
     background-color: dimgray;
-    height: 600px;
+    height: 100vh;
     background-position: center;
     background-size: cover;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -180,7 +180,34 @@ nav > h3 > a:hover {
 .card {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: column;
-    margin: 0;
+    margin: 1em;
+    background: #9ed8dbd0;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 1em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+}
+.search_bar {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+
+}
+.search > button {
+    margin: 0.5em;
+    border-radius: 20px;
+    border: none;
+    height: 2.0em;
+    width: 5em;
+}
+.search_bar {
+    border: none;
+    outline: none;
+    padding: 0.7em;
+    border-radius: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
