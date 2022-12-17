@@ -114,7 +114,7 @@ nav > ul > li > a {
 }
 nav > ul > li > a:hover {
     color: rgb(189, 87, 18);
-    background: wheat;
+    background: rgb(212, 194, 169);
 }
 
 nav > ul > li > a:before {
@@ -125,7 +125,7 @@ nav > ul > li > a:before {
     background-color: rgb(107, 95, 39);
 
     position: relative;
-    top: -35px;
+    top: -38px;
     width: 0;
 
     transition: all ease-in-out 200ms;
@@ -175,4 +175,12 @@ nav > h3 > a:hover {
 }
 .quotes > a:hover {
     background:rgb(25, 100, 93) ;
+}
+/* Styling the weather card */
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
 }

@@ -5,4 +5,5 @@ document.addEventListener('DOMContentLoaded', () => {
     const loginButton = document.getElementById('login-click')
     loginButton.addEventListener('click', () => {
         removeElement()})
+        
 })
