@@ -58,10 +58,12 @@
 <div>
     <form action="#">
         <p>Kindly leave us feedback by filling the form below.</p>
-        Name:  <input type="text" placeholder="your name"><br><br>
-        Email:  <input type="email" name="" id="" placeholder="your email"><br><br>
+        <label for="user_name">Name:</label>
+        <input type="text" placeholder="your name" id="user_name" maxlength="20"><br><br>
+        <label for="user_email">Email:</label>
+        <input type="email" name="" id="user_email" placeholder="your email"><br><br>
         <label for="feedback_box">Feedback here:</label><br>
-        <textarea name="submit" id="" cols="40" rows="10" placeholder="feedback"></textarea><br>
+        <textarea name="submit" id="" cols="40" rows="10" placeholder="feedback" id="feedback_box"></textarea><br>
         <input type="submit" value="submit"><br><br><br>
     </form>
 </div>
