@@ -1,7 +1,7 @@
-const cityName = document.getElementById('city_here').value
+document.addEventListener('DOMContentLoaded', () => {
+const cityName = document.getElementById('city_here').value = 'Nairobi'
 const apiKey = '7568ec61778dabefba67c1091ef20629'
 const fetchUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${apiKey}`
-document.addEventListener('DOMContentLoaded', () => {
    
     function removeElement() {
         document.getElementById('div1').remove()
@@ -9,14 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const loginButton = document.getElementById('login-click')
     loginButton.addEventListener('click', () => {
         removeElement()})
-
-
-    async function fetchWeather(cityName){
-        await fetch(fetchUrl)
-        .then(res => res.json())
-        .then((data) => showWeather(data))
-        }
-    // fetchWeather()
 
     function showWeather(data){
         const nameOfCity = data.name
@@ -27,16 +19,26 @@ document.addEventListener('DOMContentLoaded', () => {
         const pressure = data.main.pressure
         console.log(nameOfCity, descript, temp, humid, windSpeed, pressure)
 
-        document.getElementsByClassName('city').innerText = nameOfCity
-        document.getElementsByClassName('temp').innerText = temp + '°C'
-        document.getElementsByClassName('description').innerText = descript
-        document.getElementsByClassName('pressure').innerText = 'Air pressure: ' + pressure
-        document.getElementsByClassName('wind').innerText = 'Wind speed: ' + windSpeed + 'km/h'
-        document.getElementsByClassName('humidity').innerText = 'Humidity: '+ humid + '%'
+        document.querySelector('.city').textContent = nameOfCity
+        document.querySelector('.temp').textContent = temp + '°C'
+        document.querySelector('.description').textContent = descript
+        document.querySelector('.pressure').textContent = 'Air pressure: ' + pressure
+        document.querySelector('.wind').textContent = 'Wind speed: ' + windSpeed + 'km/h'
+        document.querySelector('.humidity').textContent = 'Humidity: '+ humid + '%'
 
     }
-    // function searchWorking(){
-    //     fetchWeather(cityName)
-    // }
-    document.querySelector('.search_button').addEventListener('click', () => fetchWeather(cityName))
+    async function fetchWeather(){
+        await fetch(fetchUrl)
+        .then(res => res.json())
+        .then((data) => showWeather(data))
+        }
+    document.querySelector('.search_button').addEventListener('click', () => fetchWeather())
+
+    document.getElementById('city_here').addEventListener('keypress', (event) => {
+        if (event.key == 'Enter') {
+            fetchWeather()
+        }
+    })
+    fetchWeather('Nairobi') // this displays by default as the user is typing their request
+    
 })

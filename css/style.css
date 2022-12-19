@@ -1,6 +1,7 @@
 body {
-    background-image: url(/css/Misty.jpg);
-    background-color: dimgray;
+    /* background-image: url(/css/Misty.jpg); */
+    background-repeat: no-repeat;
+    background-color: #91EAE4;
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -183,7 +184,7 @@ nav > h3 > a:hover {
     flex-direction: column;
     margin: 1em;
     background: #9ed8dbd0;
-    margin-left: 500px;
+    margin-left: 400px;
     margin-right: 500px;
     padding: 1em;
     border-radius: 30px;
@@ -219,4 +220,7 @@ nav > h3 > a:hover {
 }
 .weather_here > h1.temp {
     margin: 0;
+}
+.description {
+    text-transform: capitalize;
 }
