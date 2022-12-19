@@ -10,7 +10,7 @@ body {
 
 /* styling the username and password box */
 .login_box {
-    width: 300px;
+    width: 400px;
     padding: 20px;
     position: absolute;
     top: 50%;
@@ -151,16 +151,16 @@ nav > h3 > a:hover {
 }
 .quotes > h3 {
     color: rgb(60, 82, 143);
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 600;
-    letter-spacing: 4px;
-    line-height: 50px;
-    margin-bottom: 30px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    margin-bottom: 10px;
 }
 .quotes > p {
-    font-size: 17px;
-    font-weight: 700;
-    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
 }
 .quotes > a {
     color: rgb(233, 229, 224);
@@ -180,7 +180,6 @@ nav > h3 > a:hover {
 .card {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     flex-direction: column;
     margin: 1em;
     background: #9ed8dbd0;
