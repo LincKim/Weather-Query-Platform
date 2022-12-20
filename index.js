@@ -1,6 +1,6 @@
-const cityName = document.querySelector('.search_bar').value = ''
+let searchCity = document.querySelector('.search_bar')
+let city = ''
 const apiKey = '7568ec61778dabefba67c1091ef20629'
-const fetchUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${apiKey}`
 
 document.addEventListener('DOMContentLoaded', () => {
    
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const humid = data.main.humidity
         const windSpeed = data.wind.speed
         const pressure = data.main.pressure
-        console.log(nameOfCity, descript, temp, humid, windSpeed, pressure)
+        // console.log(nameOfCity, descript, temp, humid, windSpeed, pressure)
 
         document.querySelector('.city').textContent = nameOfCity
         document.querySelector('.temp').textContent = temp + '°C'
@@ -29,13 +29,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
     async function fetchWeather(){
+        city = searchCity.value;
+        let fetchUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
+        
         await fetch(fetchUrl)
         .then(res => res.json())
         .then((data) => showWeather(data))
+
+        .catch((err) => {
+            alert('Please enter a valid City/Town name!')
+        })
         }
     document.querySelector('.search_button').addEventListener('click', () => {
+       
+        fetchWeather()
         
-        fetchWeather()})
+    })
 
 
     document.getElementById('city_here').addEventListener('keypress', (event) => {
@@ -43,6 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
             fetchWeather()
         }
     })
-    fetchWeather() // this displays by default as the user is typing their request
+    // fetchWeather() // this displays by default as the user is typing their request
     
 })

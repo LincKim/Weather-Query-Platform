@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Query Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <div id="div1">
-    <form class="login_box" action="#" method="post" hidden>
+    <form class="login_box" action="#" method="post">
         <h1>Login</h1>
         <input type="text" name="" placeholder="Username" id="username">
         <input type="password" name="" placeholder="Password" id="password">
@@ -39,12 +43,14 @@
         <button class="search_button">search</button>
     </div>
     <div class="weather_here">
+        <form action="#">
         <h1 class="city"></h1>
         <h2 class="temp">°C</h2><em><strong>
         <div class="description"></div>
         <div class="pressure">Air Pressure:</div>
         <div class="humidity">Humidity: </div>
         <div class="wind">Wind Speed: </div></em></strong>
+        </form>
     </div>
     <div>
         <section class="quotes">
@@ -57,7 +63,7 @@
 </div>
 <div>
     <form action="#">
-        <p>Kindly leave us feedback by filling the form below.</p>
+        <p>Kindly leave feedback by filling the form below.</p>
         <label for="user_name">Name:</label>
         <input type="text" placeholder="your name" id="user_name" maxlength="20"><br><br>
         <label for="user_email">Email:</label>
@@ -66,7 +72,9 @@
         <textarea name="submit" id="" cols="40" rows="10" placeholder="feedback" id="feedback_box"></textarea><br>
         <input type="submit" value="submit"><br><br><br>
     </form>
-</div>
+</div><br><br><br><br><br>
+
+<footer id="copyright"> <small>&copy; LincKim Corp, 2022.</small> </footer><br>
     <script text="text/javascript" src="index.js"></script>
 </body>
 </html> 
