@@ -52,7 +52,7 @@ This Project seeks to test my understanding on:
 
 ## Deployment
 This Webpage is hosted on netlify.
-The Web App is live via this link: 
+The Web App is live via this link: https://linc-weather.netlify.app/
 
 ## Contributing
 ## Versioning
@@ -60,6 +60,6 @@ The Web App is live via this link:
 This project was contributed by: [Lincoln Kimutai Too] {https://github.com/LincKim}
 
 ## License
-This project is licensed under the ISC license.
+This project is licensed under Apache License 2.0
 
 ## Acknowledgments
