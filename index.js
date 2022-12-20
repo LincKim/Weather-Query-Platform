@@ -40,12 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Please enter a valid City/Town name!')
         })
         }
+
     document.querySelector('.search_button').addEventListener('click', () => {
        
         fetchWeather()
         
     })
-
 
     document.getElementById('city_here').addEventListener('keypress', (event) => {
         if (event.key == 'Enter') {

@@ -1,5 +1,7 @@
 # WEATHER QUERY PLATFORM
+This is a weather platform that is solely for getting information on the weather conditions of any location you so desire to know about. The information displayed after quering the platform is up-to-date and can be used to make decisions. 
 
+This platform utilizes and consumes information that has been made available and accessible by: https://openweathermap.org/api/
 
 ## BUILT WITH
 This application was built with the following technologies:
@@ -30,7 +32,11 @@ Clone the repo by using the following:
 ### PREREQUISITES
 The app will be live and the link is provided further down the short read.
 
-Otherwise if you need it at you local machine then once you have cloned then you are good to go.
+Otherwise if you need it at you local machine then the steps provided above will kickstart the process.
+
+After you have cloned the repo into your local machine then in your terminal navigate into the repository and if you have VS Code then open using the following command:
+
+    code .
 
 In this case you won't need to run the 'db json server' because the data is being fetched from a remote location.
  
@@ -38,7 +44,7 @@ In this case you won't need to run the 'db json server' because the data is bein
 #### Running the tests
 The Web App will be live and this means that you should be able to query on the weather conditions of the place you are interested in.
 
-These Project seeks to tests my understanding on:
+This Project seeks to test my understanding on:
 
 <li>Manipulating the DOM</li>
 <li>Recognizing JS Events</li>
@@ -46,7 +52,7 @@ These Project seeks to tests my understanding on:
 
 ## Deployment
 This Webpage is hosted on netlify.
-The Web App is live via these link: 
+The Web App is live via this link: 
 
 ## Contributing
 ## Versioning
